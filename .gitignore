@@ -1,0 +1,16 @@
+*.o
+
+llyx.vcxproj.filters
+llyx.vcxproj.user
+
+siik.code-workspace
+
+src/libllyx.a
+
+tests/TestProgress/TestProgress
+tests/TestProgress/TestProgress.vcxproj.filters
+tests/TestProgress/TestProgress.vcxproj.user
+
+tests/TestSimple/TestSimple
+tests/TestSimple/TestSimple.vcxproj.filters
+tests/TestSimple/TestSimple.vcxproj.user

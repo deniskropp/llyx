@@ -1,0 +1,12 @@
+llyx - UI with SFML
+
+This is a user interface library using SFML for rendering and input.
+
+Building
+	Just run 'make' to build llyx.
+
+Tests
+	In 'tests' you will find 'TestSimple' and 'TestProgress'.
+
+Install
+	This is not implemented yet.
