@@ -76,7 +76,7 @@ public:
 
 		button1->SetBounds(llyx::Bounds(400, 200, 200, 100));
 
-		button1->ClickEvent.Attach(this, [&window](int x, int y) { window.close(); });
+		button1->ClickEvent.Attach([&window](int x, int y) { window.close(); });
 
 		AddSubView(button1);
 	}
@@ -89,9 +89,9 @@ public:
 int main()
 {
 //	parallel_f::system::instance().setDebugLevel("FrameQueue", 1);
-	parallel_f::system::instance().setAutoFlush(parallel_f::system::AutoFlush::EndOfLine);
+//	parallel_f::system::instance().setAutoFlush(parallel_f::system::AutoFlush::EndOfLine);
 
-	lli::EventManager::Instance().Enable();
+//	lli::EventManager::Instance().Enable();
 
 	sf::RenderWindow window(sf::VideoMode(1200, 800), "TestSimple");
 
@@ -101,7 +101,7 @@ int main()
 	sf::Clock clock;
 
 	while (window.isOpen()) {
-		lli::EventManager::Instance().Flush();
+//		lli::EventManager::Instance().Flush();
 
 		if (testview->NeedsRepaint() || clock.getElapsedTime().asSeconds() > 3.7f) {
 			clock.restart();
