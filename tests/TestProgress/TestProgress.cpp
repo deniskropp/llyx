@@ -26,8 +26,8 @@ public:
 	{
 		llyx::TextStyle text1_style;
 
-		text1_style.text_color = llyx::Color(0.0f, 0.66f, 0.79f);
-		text1_style.text_height = 32;
+		text1_style.text_color = llyx::Color(0.0f, 0.26f, 0.29f);
+		text1_style.text_height = 64;
 		text1_style.text = "Progress Bar Test";
 
 		auto text1 = std::make_shared<llyx::TextView>(text1_style);
