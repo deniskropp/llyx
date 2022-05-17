@@ -13,7 +13,7 @@ struct RootStyle
 {
 	Color color;
 
-	RootStyle(Color color = Color(0.0f, 0.21f, 0.43f)) : color(color) {}
+	RootStyle(Color color = Color(0.2f, 0.41f, 0.63f)) : color(color) {}
 };
 
 
