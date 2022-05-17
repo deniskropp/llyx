@@ -1,3 +1,4 @@
+#include <map>
 #include <queue>
 
 #include <llyx/RootView.hpp>
@@ -100,7 +101,7 @@ RootView::RootView(sf::RenderTarget& target, const RootStyle& style)
 	AddElement(background);
 
 
-	Size.Attach([this](int w, int h) { FrameManager::Instance().Dispose(this); });
+	Size.Attach(this, [this](int w, int h) { FrameManager::Instance().Dispose(this); });
 
 	DoRepaint();
 }
@@ -140,7 +141,7 @@ void RootView::ProcessEvent(sf::Event& event)
 	}
 }
 
-void RootView::draw(sf::RenderTarget& target, sf::RenderStates states) const
+void RootView::draw(sf::RenderTarget& target, const sf::RenderStates& states) const
 {
 	std::shared_ptr<llyx::Frame> frame = FrameManager::Instance().GetFrame(this);
 

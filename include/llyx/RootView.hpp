@@ -17,7 +17,7 @@ struct RootStyle
 };
 
 
-class RootView : public View, public sf::Drawable
+class RootView : public View, public sf::Drawable, public lli::EventListener
 {
 protected:
 	sf::RenderTarget& target;
@@ -30,7 +30,7 @@ public:
 	void ProcessEvent(sf::Event& event);
 
 protected:
-	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+	virtual void draw(sf::RenderTarget& target, const sf::RenderStates& states) const override;
 };
 
 

@@ -55,7 +55,7 @@ public:
 
 		button1->SetPosition(400, 200);
 
-		button1->ClickEvent.Attach([&window](int x, int y) { window.close(); });
+		button1->ClickEvent.Attach(this, [&window](int x, int y) { window.close(); });
 
 		AddSubView(button1);
 
@@ -76,7 +76,7 @@ public:
 			AddSubView(progress);
 
 
-			timer.Attach([progress,p,i]() {
+			timer.Attach(this, [progress,p,i]() {
 				*p += (i + 1) * 0.01f;
 
 				if (*p > 1.0f)

@@ -76,7 +76,7 @@ public:
 
 		button1->SetBounds(llyx::Bounds(400, 200, 200, 100));
 
-		button1->ClickEvent.Attach([&window](int x, int y) { window.close(); });
+		button1->ClickEvent.Attach(this, [&window](int x, int y) { window.close(); });
 
 		AddSubView(button1);
 	}
