@@ -6,6 +6,7 @@ libllyx.a: \
 	Elements.o \
 	FPSView.o \
 	ImageView.o \
+	ListView.o \
 	ProgressView.o \
 	RootView.o \
 	TableView.o \
