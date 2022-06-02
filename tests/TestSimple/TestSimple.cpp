@@ -106,7 +106,7 @@ int main()
 		if (testview->NeedsRepaint() || clock.getElapsedTime().asSeconds() > 3.7f) {
 			clock.restart();
 
-			window.clear(sf::Color::Green);
+			window.clear();
 
 			window.draw(*testview);
 

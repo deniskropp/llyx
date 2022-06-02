@@ -103,7 +103,7 @@ int main()
 
 //	lli::EventManager::Instance().Enable();
 
-	sf::RenderWindow window(sf::VideoMode(1200, 800), "TestSimple");
+	sf::RenderWindow window(sf::VideoMode(1200, 800), "TestProgress");
 
 	std::shared_ptr<TestView> testview = std::make_shared<TestView>(window);
 
@@ -116,7 +116,7 @@ int main()
 		if (testview->NeedsRepaint() || clock.getElapsedTime().asSeconds() > 1.0f) {
 			clock.restart();
 
-			window.clear(sf::Color::Green);
+			window.clear();
 
 			window.draw(*testview);
 
