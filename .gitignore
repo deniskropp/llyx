@@ -7,6 +7,8 @@ siik.code-workspace
 
 src/libllyx.a
 
+tests/TestList/TestList
+
 tests/TestProgress/TestProgress
 tests/TestProgress/TestProgress.vcxproj.filters
 tests/TestProgress/TestProgress.vcxproj.user
