@@ -34,7 +34,7 @@ private:
 public:
 	Frame(unsigned int width, unsigned int height, sf::Time time) : time(time)
 	{
-		if (!create(width, height))
+		if (!create({width, height}))
 			throw std::runtime_error("could not create frame texture");
 	}
 

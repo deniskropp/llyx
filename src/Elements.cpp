@@ -25,7 +25,7 @@ void BackgroundElement::Render(std::shared_ptr<Frame> frame, sf::RenderStates st
 {
 	auto bounds = view->GetBounds();
 
-	sf::VertexArray va(sf::TriangleFan, 4);
+	sf::VertexArray va(sf::PrimitiveType::TriangleFan, 4);
 
 	va[0] = sf::Vertex(sf::Vector2f(0.0f, 0.0f), color);
 	va[1] = sf::Vertex(sf::Vector2f(0.0f, (float)bounds.h), color);
@@ -47,7 +47,7 @@ void BorderElement::Render(std::shared_ptr<Frame> frame, sf::RenderStates states
 {
 	auto bounds = view->GetBounds();
 
-	sf::VertexArray va(sf::TriangleFan, 4);
+	sf::VertexArray va(sf::PrimitiveType::TriangleFan, 4);
 
 	va[0] = sf::Vertex(sf::Vector2f(-width / 2.0f, -width / 2.0f), color);
 	va[1] = sf::Vertex(sf::Vector2f(width / 2.0f, width / 2.0f), color);
@@ -243,7 +243,7 @@ void ProgressElement::Render(std::shared_ptr<Frame> frame, sf::RenderStates stat
 {
 	auto bounds = view->GetBounds();
 
-	sf::VertexArray va(sf::TriangleFan, 4);
+	sf::VertexArray va(sf::PrimitiveType::TriangleFan, 4);
 
 	va[0] = sf::Vertex(sf::Vector2f(1.0f, 1.0f), color);
 	va[1] = sf::Vertex(sf::Vector2f(1.0f, (float)(bounds.h - 1)), color);

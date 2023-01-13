@@ -85,7 +85,7 @@ int main()
 
 //	lli::EventManager::Instance().Enable();
 
-	sf::RenderWindow window(sf::VideoMode(1200, 800), "TestList");
+	sf::RenderWindow window(sf::VideoMode({1200, 800}), "TestList");
 
 	std::shared_ptr<TestView> testview = std::make_shared<TestView>(window);
 
