@@ -14,7 +14,7 @@ libllyx.a: \
 	View.o
 	$(AR) cr $@ $+
 
-INCLUDES = -I../include -I../../eventpp/include `pkg-config --cflags sfml-graphics`
+INCLUDES = -I../include -I../../eventpp/include `pkg-config --cflags sfml-system`
 
 %.o: %.cpp
 	$(CXX) $(INCLUDES) -std=c++17 -o $@ -c $<
