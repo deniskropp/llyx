@@ -8,11 +8,16 @@ siik.code-workspace
 src/libllyx.a
 
 tests/TestList/TestList
+tests/TestList/TestList.exe
 
 tests/TestProgress/TestProgress
+tests/TestProgress/TestProgress.exe
 tests/TestProgress/TestProgress.vcxproj.filters
 tests/TestProgress/TestProgress.vcxproj.user
 
 tests/TestSimple/TestSimple
+tests/TestSimple/TestSimple.exe
 tests/TestSimple/TestSimple.vcxproj.filters
 tests/TestSimple/TestSimple.vcxproj.user
+
+.vscode
